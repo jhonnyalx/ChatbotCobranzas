@@ -23,6 +23,7 @@ async function funDesicion(body){
             var resultado=null       
                  
             if(valCi!="Cedula Incorrecta" && valCi.length!=0 ){
+                console.log(valCi);
                 resultado={"respuesta":[valCi[0].p_nombre,valCi[0].p_apellido]};
             }else{
                 resultado={"respuesta":[valCi]};

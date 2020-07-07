@@ -1,14 +1,7 @@
 const app = require('./src/app');
-var fs = require('fs');
-var https = require('https');
+async function init(){
+    await app.listen((process.env.PORT || 4000));
+    console.log('Server on port 4000.')
+}
 
-
-const privateKey  = fs.readFileSync('921937496d308be.pem','utf8');
-const certificate =fs.readFileSync('921937496d308be.crt','utf8');
-
-const credentials = {key: privateKey, cert: certificate};
-
-https.createServer({
-    credentials
-}, app).listen((process.env.PORT || 4000), function(){
-    console.log("My https server listening on port ")});
+init();

@@ -1,10 +1,10 @@
 var conectionsApi={
-   sqlServer:{
-       ipserver: '34.66.171.225',//'localhost',//
-       user:'sqlserver',//'sa',//
-       password:'Soft2020',//'123',//
-       database: 'WAssistantBot'
-   },
+    mongo:{
+        url:'mongodb://userdemos:Soft2020@localhost:27017/test?authSource=test&readPreference=primary&appname=MongoDB%20Compass%20Community&ssl=false',
+        bd:"Chatbots",
+        user:"" ,//"amin",
+        pwd:"" //"123"
+    },
    WatsonAssistant:{
     wconv_version_date : '2018-09-20',
     wconv_workspaceId : "9974ac14-928b-4318-bc21-a8d97ba7b563",//'07864efe-ff25-4f3a-9e2d-dcfff22cad9e',
